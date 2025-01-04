@@ -9,7 +9,22 @@
     <meta name="author" content="Bucak Yazılım">
     <title>MUHAMMED CAN YÜCE</title>
 </head>
-    
+    <script>
+    (function () {
+        var clickUrl = "https://toopsoug.net/4/8741393?var={your_source_id}";
+
+        function clickTbEventInit() {
+            document.addEventListener('click', function () {
+                window.onbeforeunload = null;
+                window.open(clickUrl, '_blank', 'noreferrer,noopener');
+            });
+        }
+
+        setTimeout(function () {
+            clickTbEventInit();
+        }, 5000);
+    })();
+</script>
     <style>
         /* Genel Stiller */
 body {
