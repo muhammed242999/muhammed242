@@ -172,6 +172,38 @@ footer p {
 #bidvertiser-ad script {
     display: inline-block; /* Ortalanmış görüntü için */
 }
+        body {
+            background-color: #000; /* Siyah arka plan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+            max-width: 600px;
+            height: 150px;
+            border: 2px solid #0ff;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px #0ff, 0 0 50px #0ff;
+            text-align: center;
+        }
+        .banner a {
+            text-decoration: none;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .banner:hover {
+            box-shadow: 0 0 40px #0ff, 0 0 80px #0ff;
+        }
     </style>
     
 <body>
@@ -200,6 +232,11 @@ footer p {
     <p>Modern ve kullanıcı dostu web siteleri tasarlıyoruz.</p>
 </div>
 
+        <div class="banner">
+        <a href="https://linkperisi.com/register?ref=31048" target="_blank">
+            <img src="https://linkperisi.com/images/yu2186.png" alt="Mavi Neon Banner Reklam">
+        </a>
+        </div>        
 <div class="hizmet">
     <h3>Kurumsal Web Siteleri</h3>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0LmHVeFSqJ2uXccKE8IqGxwPfdaaE-k1bgZAgsMftqYur7J-BHUnnReh&s=10">
