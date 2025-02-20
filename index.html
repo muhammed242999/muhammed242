@@ -3,412 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammed Can Yüce , web tasarımı, SEO ve dijital pazarlama çözümleri sunmaktadır.">
-    <meta name="keywords" content="Muhammed Can Yüce , Web Tasarım, SEO, Dijital Pazarlama">
-    <meta name="author" content="Muhammed Can Yüce ">
-    <title>MUHAMMED CAN YÜCE</title>
-    <head>
-    
-    </head>
+    <meta name="description" content="Muhammed Can Yüce - Sosyal Medya Tasarım Paketi ve Web Tasarım Hizmeti">
+    <meta name="keywords" content="Sosyal Medya Tasarım Paketi, Web Tasarım Hizmeti, Muhammed Can Yüce">
+    <meta name="author" content="Muhammed Can Yüce">
+    <title>MUHAMMED CAN YÜCE - Tasarım Hizmetleri</title>
     <style>
         /* Genel Stiller */
-body {
-    background-color: #000; /* Siyah arkaplan */
-    color: #fff; /* Beyaz yazı */
-    font-family: Arial, sans-serif; /* Basit font */
-    margin: 0;
-    padding: 0;
-}
+        body {
+            background-color: #000; /* Siyah arkaplan */
+            color: #fff; /* Beyaz yazı */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-/* Üst Menü */
-nav {
-    background-color: #111;
-    padding: 10px 20px;
-    box-shadow: 0 0 10px #00FFFF; /* Neon mavi gölge */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Üst Menü */
+        nav {
+            background-color: #111;
+            padding: 20px 30px;
+            box-shadow: 0 0 15px #00FFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00FFFF; /* Neon mavi */
-    text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
-}
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00FFFF;
+            text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+            text-decoration: none; /* logo link ise alt çizgi kalksın */
+        }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        /* Banner Alanı */
+        .banner {
+            background: #111;
+            text-align: center;
+            padding: 80px 30px;
+            color: #00FFFF;
+            text-shadow: 0 0 5px #00FFFF;
+        }
 
-nav ul li {
-    margin-left: 20px;
-}
+        .banner h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+            text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #00FFFF; /* Neon mavi */
-    transition: color 0.3s ease;
-}
+        .banner p {
+            font-size: 1.3rem;
+            color: #eee;
+            margin-bottom: 40px;
+        }
 
-nav ul li a:hover {
-    color: #FFFFFF; /* Neon beyaz */
-    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
-}
+        .banner button {
+            background-color: #00FFFF;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 0 8px #00FFFF;
+            transition: all 0.3s ease;
+            border-radius: 5px; /* Buton köşeleri */
+        }
 
-/* Ana Banner */
-.banner {
-    background: #111; /* Siyah arkaplan */
-    text-align: center;
-    padding: 50px 20px;
-    color: #00FFFF; /* Neon mavi */
-    text-shadow: 0 0 5px #00FFFF;
-}
+        .banner button:hover {
+            background-color: #00BFFF; /* Biraz daha koyu neon mavi */
+            box-shadow: 0 0 15px #00FFFF;
+        }
 
-.banner h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #FFFFFF; /* Neon beyaz */
-    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
-}
+        /* Hizmetler Bölümü */
+        .hizmetler {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 30px;
+            background-color: #111;
+        }
 
-.banner p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #fff;
-}
+        .hizmet {
+            flex: 1;
+            min-width: 300px; /* Hizmet kutularının minimum genişliği */
+            text-align: center;
+            padding: 30px;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #00FFFF;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.banner button {
-    background-color: #00FFFF; /* Neon mavi */
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 0 5px #00FFFF;
-    transition: all 0.3s ease;
-}
+        .hizmet:hover {
+            transform: translateY(-10px); /* Yukarı kaydırma efekti */
+            box-shadow: 0 0 20px #00FFFF;
+        }
 
-.banner button:hover {
-    background-color: #00FFFF;
-    box-shadow: 0 0 10px #00FFFF;
-    color: #000;
-}
+        .hizmet img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Yuvarlak resimler */
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px #00FFFF;
+        }
 
-/* Biz Bunları Sunuyoruz Bölümü */
-.sundugumuz-hizmetler {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #111;
-    color: #00FFFF;
-}
+        .hizmet h3 {
+            color: #FFFFFF;
+            text-shadow: 0 0 5px #FFFFFF;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
 
-.sundugumuz-hizmetler h2 {
-    color: #FFFFFF; /* Neon beyaz */
-    text-shadow: 0 0 5px #FFFFFF;
-    margin-bottom: 20px;
-}
+        .hizmet p {
+            color: #ddd;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
 
-/* Resim Boyutlandırma */
-.sundugumuz-hizmetler .hizmet img {
-    width: 100%; /* Resmin bulunduğu kutuya göre genişlik */
-    max-width: 200px; /* Resmin maksimum genişliği */
-    height: auto; /* Yükseklik oranı korunarak genişlik ayarlanır */
-    display: block;
-    margin: 0 auto 10px; /* Resmin altına boşluk ekler ve ortalar */
-}
+        .hizmet button {
+            background-color: #00FFFF;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #00FFFF;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.sundugumuz-hizmetler .hizmet:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #00FFFF;
-}
+        .hizmet button:hover {
+            background-color: #00BFFF;
+            box-shadow: 0 0 10px #00FFFF;
+        }
 
-.sundugumuz-hizmetler .hizmet h3 {
-    color: #FFFFFF; /* Neon beyaz */
-    text-shadow: 0 0 5px #FFFFFF;
-}
 
-.sundugumuz-hizmetler .hizmet p {
-    color: #fff;68
-    font-size: 1rem;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 0 5px #00FFFF;
-}
-
-footer p {
-    margin: 0;
-    color: #00FFFF;
-    text-shadow: 0 0 5px #00FFFF;
-    font-size: 0.9rem;
-}
-    .sundugumuz-hizmetler .hizmet {
-    border: 2px solid #00FFFF; /* Neon mavi çizgi */
-    padding: 10px; /* İç boşluk */
-    margin: 10px; /* Dış boşluk */
-    border-radius: 10px; /* Köşeleri yuvarlatma */
-    box-shadow: 0 0 10px #00FFFF; /* Hafif bir gölge */
-    }
-        
+        /* Footer */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 0 8px #00FFFF;
+            color: #00FFFF;
+            text-shadow: 0 0 5px #00FFFF;
+            font-size: 0.9rem;
+        }
     </style>
-    
+</head>
 <body>
-    <!-- Üst Menü -->
-    <nav>
-        <div class="logo">MUHAMMED CAN YÜCE </div>
 
+    <nav>
+        <a href="#" class="logo">MUHAMMED CAN YÜCE</a>
     </nav>
-        
-    <!-- Ana Banner -->
+
     <section class="banner">
-        <h1>Yazılım Çözümleri ve Danışmanlık</h1>
-        <p>Benimle işinizi dijital dünyaya taşıyın!</p>
-        <a href="https://wa.me/905510446146" target="_blank">
-    <button>Daha Fazla Bilgi</button>
-</a>
+        <h1>Dijital Varlıklarınızı Güçlendirin</h1>
+        <p>Sosyal medya ve web tasarımında profesyonel çözümlerle yanınızdayım.</p>
+        <a href="https://wa.me/905510446146" target="_blank"><button>Hemen İletişime Geçin</button></a>
     </section>
 
-    <!-- Biz Bunları Sunuyoruz Bölümü -->
-    <section class="sundugumuz-hizmetler">
-        <h2>Biz Bunları Sunuyoruz</h2>
-        
+    <section class="hizmetler">
         <div class="hizmet">
-    <h3>Web Tasarımı</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOdqURvngnlC6x-HiKUzmbqVaBC6Edw-WIg&usqp=CAU">
-    <p>Modern ve kullanıcı dostu web siteleri tasarlıyoruz.</p>
-        </div> 
+            <img src="social-media-design-package-image.jpg" alt="Sosyal Medya Tasarım Paketi">
+            <h3>Sosyal Medya Tasarım Paketi</h3>
+            <p>Markanızın sosyal medya platformlarında öne çıkması için etkileyici ve profesyonel tasarımlar. İçeriklerinizi görsel olarak zenginleştirerek takipçi etkileşiminizi artırın.</p>
+            <button>Detayları İncele</button>
+        </div>
 
-<a href="https://linkperisi.com/register?ref=31048">
-  <img src="https://linkperisi.com/images/yu2186.png" alt="Image with link" width="300">
-</a>
-        
-<div class="hizmet">
-    <h3>Kurumsal Web Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0LmHVeFSqJ2uXccKE8IqGxwPfdaaE-k1bgZAgsMftqYur7J-BHUnnReh&s=10">
-    <p>Şirketler ve kuruluşlar için profesyonel ve güvenilir web siteleri.</p>
-</div>
-        <!-- 300x250 Banner-->
-<a href="https://tr.link/ref/515200"><img src="//tr.link/webroot/img/ref/300x250.jpg" title="Para Kazanmak İçin Tıkla Kayıt OL" /></a>
-<!-- 300x250 Banner--> 
+        <div class="hizmet">
+            <img src="web-design-service-image.jpg" alt="Web Tasarım Hizmeti">
+            <h3>Web Tasarım Hizmeti</h3>
+            <p>İşletmeniz için modern, kullanıcı dostu ve amaca yönelik web siteleri. İlk izleniminizi güçlendirin ve online başarınızı artırın.</p>
+            <button>Detayları İncele</button>
+        </div>
+    </section>
 
-<div class="hizmet">
-    <h3>E-Ticaret Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBJ1RiyHgSPvVpPzJwJteSToxzgq9oL0O8FH7jiXH9_loBwNobOn-yux5&s=10">
-    <p>Online satış ve alışveriş için güvenli ve hızlı e-ticaret siteleri tasarlıyoruz.</p>
-</div>
-
-        <div style="position: relative; display: inline-block;">
-  <a href="https://ay.live/m5cs9" style="display: inline-block; animation: glow 1.5s infinite; border-radius: 10px; overflow: hidden;">
-    <img src="Link1.jpg" alt="Image with link" width="320" height="140" 
-         style="border-radius: 10px; transition: transform 0.3s; box-shadow: 0 0 10px #00FFFF;" 
-         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 20px #00FFFF';" 
-         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px #00FFFF';">
-  </a>
-  <span style="position: absolute; top: 5px; left: 5px; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 12px; padding: 2px 5px; border-radius: 3px;">Reklam</span>
-</div>
-
-<style>
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF;
-    }
-    50% {
-      box-shadow: 0 0 15px #00FFFF, 0 0 25px #00FFFF, 0 0 35px #00FFFF;
-    }
-    100% {
-      box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF;
-    }
-  }
-</style>
-        
-<div class="hizmet">
-    <h3>Kişisel Web Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalE3oedHm_jolxrcCbwLBJmr16mVNmYvQQSDlVZdOnM8noy6kpm3f1AO7&s=10">
-    <p>Bireylerin kendilerini tanıtmak için kullanabilecekleri kişisel web siteleri.</p>
-</div>
-        <!-- 300x250 Banner--> <a href=" https://cpm.link/ref/515320 "> <img src=" //cpm.link/webroot/img/ref/cpm/300x250.jpg " title="Para Kazanmak İçin Tıklayın Kaydolun" /> </a> <!-- 300x250 Banner-->
-
-
-<div class="hizmet">
-    <h3>Blog Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndv_3i2fyW4Ep7gOLyFipE3A1e4arh8qguwpjqNBjMZ61McXftRU2IMof&s=10">
-    <p>Yazarlar, içerik üreticileri ve düşünce paylaşımı için blog platformları.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Haber Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcTq5c2ePw9QkjfUtgXQHyMiKfLObu7WEmYBXP5_7euFtPhu8lwYOhuyC&s=10">
-    <p>Güncel haberler, makaleler ve bilgilendirici içerik paylaşımı için siteler.</p>
-</div>
-         <div style="position: relative;"><iframe src="https://publisher.linkvertise.com/cdn/ads/LV-200x200/index.html" frameborder="0" height="200" width="200"></iframe><a href="https://publisher.linkvertise.com/ac/1278697" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a></div>
-
-<div class="hizmet">
-    <h3>Portföy Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-OzLBISDjODpOx-RWlCxZy6QZM0Dvsov03EYr_68G3UIiVTNM2ECXzJ0&s=10">
-    <p>Sanatçılar, tasarımcılar ve profesyoneller için portföy web siteleri.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Forum Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBVVgI_NPSato2NbQrayTwsONizuLPX8lDAtoJ3rX1j5QKsoRd0Tjtu49Z&s=10">
-    <p>Toplulukların bir araya gelip tartışma yaptığı forum tabanlı web siteleri.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Oyun Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkSoHRN_TBa9lgd5IFsQSeQM0BpcHyQvOcOcpSakCpQaPJ3-g3tfVZ4JO&s=10">
-    <p>Tarayıcı tabanlı oyunlar ve oyunculara yönelik web siteleri.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Video Paylaşım Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VLvDIAb0C9-t5rI_saeKXAcUfqEpiZZaaSBllHITRr0W-L88kQwIGLiF&s=10">
-    <p>Kullanıcıların video içeriklerini paylaşabileceği platformlar.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Sosyal Medya Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdm8-dzWVMEt06PoJ6-U3b82JfLw1SL-V7AmqhaStm6a6Hk_BHjq-iXMM&s=10">
-    <p>Kullanıcıların iletişim kurup içerik paylaşabileceği sosyal ağlar.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Eğitim Siteleri</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxkNwXaBEY0NK7MFl1d-s29BM_DF_Ed3AdxfblQYXywVapNygcu2NXO2&s=10">
-    <p>Online eğitim ve kurslara yönelik web siteleri.</p>
-</div>
-
-<div class="hizmet">
-    <h3>Sağlık ve Fitness Siteleri</h3>
-    <p>Sağlık bilgileri, diyet ve fitness programlarını içeren siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThkLkfcbdPChAuJbYQkmMqeIOgBSLdVrc7rQG-9jt0rdE57S9K_h1ZvdP4&s=10" alt="Sağlık ve Fitness">
-</div>
-
-<div class="hizmet">
-    <h3>Hobi ve Eğlence Siteleri</h3>
-    <p>Kullanıcıların boş vakitlerini değerlendirebilecekleri içerikler sunan siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8W5zJPnnmjQpv3pXXQAiiQcxrbTtfrcNhNvbR6V3kN1Ttg3opsjygIISr&s=10" alt="Hobi ve Eğlence">
-</div>
-
-<div class="hizmet">
-    <h3>Rehber ve Dizin Siteleri</h3>
-    <p>Farklı kategorilerdeki işletme ve hizmet rehberleri.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXPvLsxSVIxxbPYbOkua_iVlxfz2PxzQkw-_Qdg9soXVzqKsfqwfh1LN0&s=10" alt="Rehber ve Dizin">
-</div>
-
-<div class="hizmet">
-    <h3>Turizm ve Gezi Siteleri</h3>
-    <p>Seyahat planlama, otel rezervasyonu ve gezi rehberleri.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5XgMmkx3vSoXd9z4ymN2TDr0QH8f02HKLg8GbiU4OVADTiGb72Yt7mFRg&s=10" alt="Turizm ve Gezi">
-</div>
-
-<div class="hizmet">
-    <h3>Gayrimenkul Siteleri</h3>
-    <p>Emlak ilanları ve gayrimenkul danışmanlığı siteleri.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS86X6GAjV5Nw4nHfoUNHALMRv3l_asAjPfaOpknBYPY3qkjRIiM8KSnq8Z&s=10" alt="Gayrimenkul">
-</div>
-
-<div class="hizmet">
-    <h3>Finans ve Bankacılık Siteleri</h3>
-    <p>Online bankacılık, finans yönetimi ve yatırım araçlarına yönelik siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4KrqA9F9hg9C2wpN6IiOoGS_Ok8X-dZ6hTj_lhHz15rIQb1pN6MNpLLg&s=10" alt="Finans ve Bankacılık">
-</div>
-
-<div class="hizmet">
-    <h3>Teknoloji Siteleri</h3>
-    <p>Teknolojik gelişmeler, incelemeler ve haberler için web siteleri.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDDmh3SulLLoEkHAfKpOJqvkxyfSJ9jZfuKg&s" alt="Teknoloji">
-</div>
-
-<div class="hizmet">
-    <h3>Müzik ve Sanat Siteleri</h3>
-    <p>Sanatçılar ve müzikseverler için içerik paylaşımına yönelik siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR739Rui0C_moQ57NLcUESxDroUHyGOl304GA&s" alt="Müzik ve Sanat">
-</div>
-
-<div class="hizmet">
-    <h3>Etkinlik ve Organizasyon Siteleri</h3>
-    <p>Etkinlik duyuruları, bilet satışları ve organizasyon planlama siteleri.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoMzw0nrZ6h94N6y1l_ZfnF0DCtcIee3QJ4-EdCLm2JyNvQu1PWklbVsv&s=10" alt="Etkinlik ve Organizasyon">
-</div>
-
-<div class="hizmet">
-    <h3>Hayvan ve Doğa Siteleri</h3>
-    <p>Hayvan dostları ve doğa severler için bilgilendirici içerikler.</p>
-    <img src="https://images.pexels.com/photos/4248503/pexels-photo-4248503.jpeg" alt="Hayvan ve Doğa">
-</div>
-        <!-- Ouo.io banner kodunun başlangıcı --> 
-<a href="http://ouo.io/ref/8YtG7y4t"><img src="http://ouo.io/images/banners/r4.jpg" title="ouo.io - Kısa bağlantılar oluşturun ve en büyük parayı kazanın" /></a> 
-<!-- Ouo.io banner kodunun sonu -->
-
-<div class="hizmet">
-    <h3>Hava Durumu ve Coğrafya Siteleri</h3>
-    <p>Güncel hava durumu bilgisi ve coğrafi verilerin paylaşıldığı siteler.</p>
-    <img src="https://images.pexels.com/photos/1565845/pexels-photo-1565845.jpeg" alt="Hava Durumu ve Coğrafya">
-</div>
-
-<div class="hizmet">
-    <h3>Çevrimiçi Araçlar</h3>
-    <p>Ölçüm, analiz ve dönüştürme gibi araçlara sahip siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsICL4jzTrhqYg3k-gGWjUK0aJhrXCGniHEwRR9DiCRPO3QIejdvJAPY&s=10" alt="Çevrimiçi Araçlar">
-</div>
-        
-<div class="hizmet">
-    <h3>İş Arama Siteleri</h3>
-    <p>İş arayanlar ve iş verenler için ilan platformları.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNN1NyRS7LDMBPFTRmWe2j0dCSez6S8TwrSQ&s" alt="İş Arama Siteleri">
-</div>
-
-<div class="hizmet">
-    <h3>Destek ve Yardım Siteleri</h3>
-    <p>Kullanıcılara teknik destek ve rehberlik sunan siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEcVUUpamhtlbGUtSL6yVIOPwz6peD3Eu2g&s" alt="Destek ve Yardım">
-</div>
-
-<div class="hizmet">
-    <h3>Çevrimiçi Alışveriş Siteleri</h3>
-    <p>Market, giyim, elektronik ve diğer ürünlerin satıldığı platformlar.</p>
-    <img src="https://www.kaspersky.com.tr/content/tr-tr/images/repository/isc/2021/safe_shopping_2.jpg" alt="Çevrimiçi Alışveriş">
-</div>
-
-<div class="hizmet">
-    <h3>Yapay Zeka Siteleri</h3>
-    <p>Yapay zeka tabanlı uygulamalar ve araçların kullanıldığı siteler.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCY9ejOFLgc36nDc3rQKb3y4Czd9RqTk4n0A&s" alt="Yapay Zeka">
-</div>
-
-<div class="hizmet">
-    <h3>Kripto Para ve Blockchain Siteleri</h3>
-    <p>Kripto para ticareti ve blockchain teknolojisine yönelik platformlar.</p>
-    <img src="https://www.gurkangurkan.com/Resources/Press/ImageFile/8_m.jpg" alt="Kripto Para ve Blockchain">
-    
-</div><!--Page Shortener-->
-
-<script>
-
-var api= "c001d39f4f6cd297109dc7983def471e382b2ec4";
-
-var ct= "0";
-
-</script>
-
-<script src="//aylink.co/t89s3.js"></script>
-
-<!--Page Shortener end-->
-        
-        
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 MUHAMMED CAN YÜCE. Tüm Hakları Saklıdır.</p>
     </footer>
+
 </body>
-    
 </html>
