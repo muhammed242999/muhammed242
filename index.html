@@ -72,15 +72,15 @@
         /* Hizmetler Bölümü */
         .hizmetler {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
             padding: 40px 20px;
             background-color: #111;
         }
 
         .hizmet {
-            width: 90%;
+            width: 45%;
             max-width: 400px;
             text-align: center;
             padding: 20px;
@@ -110,6 +110,17 @@
         .hizmet p {
             color: #ddd;
             font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hizmetler {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hizmet {
+                width: 90%;
+            }
         }
 
         /* Footer */
